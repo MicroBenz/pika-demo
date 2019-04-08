@@ -1,0 +1,42 @@
+{
+  "name": "pika-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "serve ./public",
+    "prepare": "pika-web --dest public/web_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MicroBenz/pika-demo.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MicroBenz/pika-demo/issues"
+  },
+  "homepage": "https://github.com/MicroBenz/pika-demo#readme",
+  "dependencies": {
+    "dayjs": "^1.8.12",
+    "emotion": "^10.0.9",
+    "express": "^4.16.4",
+    "htm": "^2.1.1",
+    "preact": "10.0.0-alpha.4"
+  },
+  "devDependencies": {
+    "@pika/web": "^0.4.1",
+    "serve": "^11.0.0"
+  },
+  "@pika/web": {
+    "webDependencies": [
+      "htm",
+      "htm/preact",
+      "preact",
+      "preact/hooks",
+      "dayjs",
+      "emotion"
+    ]
+  }
+}
